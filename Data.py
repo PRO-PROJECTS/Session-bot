@@ -37,7 +37,6 @@ By @Superior_Bots
             InlineKeyboardButton("How to Use 💜", callback_data="help"),
             InlineKeyboardButton("GitHub ✅", url='https://GitHub.com/ITZ-ZAID')
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/Superir_Bots")],
     ]
 
     # Help Message
