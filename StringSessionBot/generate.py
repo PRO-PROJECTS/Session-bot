@@ -39,11 +39,8 @@ async def generate_session(bot, msg, telethon=False):
     user_id = msg.chat.id
     api_hash = API_HASH
     API_ID = 6435225
-    api_id_msg = filters=filters.text(API_ID)
-    if await cancelled(api_id_msg):
-        return
-    try:
-        api_id = int(api_id_msg.text)
+    api_id = API_ID
+    api_id_msg = filters=filters.text
     except ValueError:
         await api_id_msg.reply('Not a valid API_ID (which must be an integer). Please start generating session again.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
         return
