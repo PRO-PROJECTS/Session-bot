@@ -37,9 +37,12 @@ async def main(_, msg):
 async def generate_session(bot, msg, telethon=False):
     await msg.reply("Starting {} Session Generation...".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
-    api_id = API_ID
     api_hash = API_HASH
-    api_id_msg = (user_id, filters=filters.text)
+    api_id_msg = API_ID
+    if await cancelled(api_id_msg):
+        return
+    try:
+        api_id = int(api_id_msg.text)
     phone_number_msg = await bot.ask(user_id, 'Now please send your `PHONE_NUMBER` along with the country code. \nExample : `+19876543210`', filters=filters.text)
     phone_number = phone_number_msg.text
     await msg.reply("Sending OTP...")
