@@ -41,9 +41,6 @@ async def generate_session(bot, msg, telethon=False):
     API_ID = 6435225
     api_id = API_ID
     api_id_msg = filters=filters.text
-    except ValueError:
-        await api_id_msg.reply('Not a valid API_ID (which must be an integer). Please start generating session again.', quote=True, reply_markup=InlineKeyboardMarkup(Data.generate_button))
-        return
     phone_number_msg = await bot.ask(user_id, 'Now please send your `PHONE_NUMBER` along with the country code. \nExample : `+19876543210`', filters=filters.text)
     phone_number = phone_number_msg.text
     await msg.reply("Sending OTP...")
