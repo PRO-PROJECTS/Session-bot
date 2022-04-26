@@ -38,7 +38,7 @@ async def generate_session(bot, msg, telethon=False):
     await msg.reply("Starting {} Session Generation...".format("Telethon" if telethon else "Pyrogram"))
     user_id = msg.chat.id
     api_hash = API_HASH
-    API_ID = API_ID
+    API_ID = 6435225
     api_id_msg = filters=filters.text(API_ID)
     if await cancelled(api_id_msg):
         return
