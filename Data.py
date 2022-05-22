@@ -32,7 +32,7 @@ By @Superior_Bots
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/SUPERIOR_BOTS/357")],
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/TheUpdatesChannel/357")],
         [
             InlineKeyboardButton("How to Use 💜", callback_data="help"),
             InlineKeyboardButton("GitHub ✅", url='https://GitHub.com/ITZ-ZAID')
