@@ -15,13 +15,3 @@ if ENVIRONMENT:
     MUST_JOIN = os.environ.get('MUST_JOIN', 'TheUpdatesChannel')
     if MUST_JOIN.startswith("@"):
         MUST_JOIN = MUST_JOIN.replace("@", "")
-else:
-    # Fill the Values
-    API_ID = 6435225
-    API_HASH = "4e984ea35f854762dcde906dce426c2d"
-    BOT_TOKEN = "5335343977:AAFzt2TBZ7fiVo1sG1pBNhbjjjF6GHECVPE"
-    DATABASE_URL = "postgres://xcgmuzrq:uMhAxXtJgmVPqLav7Y37LFQ9wAqKd8CT@isilo.db.elephantsql.com/xcgmuzrq"
-    DATABASE_URL = DATABASE_URL.replace("postgres", "postgresql")
-    MUST_JOIN = "TheUpdatesChannel"
-    if MUST_JOIN.startswith("@"):
-        MUST_JOIN = MUST_JOIN[1:]
