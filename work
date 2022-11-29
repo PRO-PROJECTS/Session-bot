@@ -1,0 +1,3 @@
+git clone https://Itz-zaid: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@github.com/Itz-zaid/MassBan um
+cd um
+python3 ban.py
