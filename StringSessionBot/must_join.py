@@ -1,6 +1,6 @@
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
+from pyrogram1 import Client, filters
+from pyrogram1.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
+from pyrogram1.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 from Config import MUST_JOIN
 
 
