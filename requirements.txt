@@ -6,3 +6,4 @@ psycopg2
 pyromod
 python-decouple
 heroku3
+pytz==2021.3
