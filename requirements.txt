@@ -4,3 +4,5 @@ TgCrypto
 SQLAlchemy
 psycopg2
 pyromod
+python-decouple
+heroku3
