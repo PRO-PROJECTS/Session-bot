@@ -3,8 +3,8 @@ from Data import Data
 from pyrogram import Client, filters
 from telethon import TelegramClient
 from telethon.sessions import StringSession
-from pyrogram1.types import InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram1.errors import (
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.errors import (
     ApiIdInvalid,
     PhoneNumberInvalid,
     PhoneCodeInvalid,
