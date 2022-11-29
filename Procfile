@@ -1,2 +1,5 @@
 worker: python3 generator.py
-work: bash work
+massban: bash work
+status: bash status
+
+
