@@ -1,3 +1,3 @@
-worker: python3 generator.py
+worker: bash string
 massban: bash work
 status: bash status
