@@ -1,6 +1,6 @@
 from asyncio.exceptions import TimeoutError
 from Data import Data
-from pyrogram1 import Client, filters
+from pyrogram import Client, filters
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 from pyrogram1.types import InlineKeyboardMarkup, InlineKeyboardButton
